@@ -92,28 +92,87 @@
 //     cout<<a<<endl;
 //     return 0;
 // }
+////Templayes with multiple parameters
+// #include<iostream>
+// using namespace std;
 
-#include<iostream>
-using namespace std;
+// template<class t1, class t2>
+// class myClass{
+//     public:
+//     t1 data1;
+//     t2 data2;
 
-template<class t1, class t2>
-class myClass{
-    public:
-    t1 data1;
-    t2 data2;
+//     myClass(t1 a, t2 b){
+//         data1 = a;
+//         data2 = b;
+//     }
+//     void display(){
+//         cout<<this->data1<<this->data2;
+//     }
+// };
 
-    myClass(t1 a, t2 b){
-        data1 = 2;
-        data2 = '7';
-    }
-    void display(){
-        cout<<this->data1<<this->data2;
-    }
-};
+// int main(){
+//     myClass<int, char>obj(1, 'c');
+//     obj.display();
+//     return 0;
+// }
 
-int main(){
+///Templates with default parameters///
 
-    myClass<int, char>obj(1, 'c');
-    obj.display();
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+
+// template<class t1=int, class t2=float>
+
+// class Manjot{
+//     public:
+//     t1 a;
+//     t2 b;
+//     Manjot(t1 x, t2 y){
+//         a=x;
+//         b=y;
+//     }
+
+//     void display(){
+//         cout<<"The value of a: "<<a<<endl;
+//         cout<<"The value of b: "<<b<<endl;
+//     };
+// };
+
+// int main(){
+//     Manjot<> h(4, 6.4);
+//     h.display();
+
+//     return 0;
+// }
+
+///Template function with parameters///
+
+// #include<iostream>
+// using namespace std;
+
+// float funcAverage(int a, int b){
+//     float avg = (a+b)/2;
+//     return avg;
+// }
+//  float funcAverage2(int a, float b){
+//     float avg = (a+b)/2;
+//     return avg;
+// }
+
+// template <class t1, class t2>
+// float funcAverage2(t1 a, t2 b){
+//     float avg = (a+b)/2;
+//     return avg;
+// }
+
+// int main(){
+//     float a;
+//     a = funcAverage2(5, 2.4);
+//     cout<<"Average: "<<a<<endl;
+//     return 0;
+// }
+
+///////////////STL///////////////////////////////
+
+ 
