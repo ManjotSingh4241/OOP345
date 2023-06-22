@@ -148,31 +148,52 @@
 
 ///Template function with parameters///
 
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// float funcAverage(int a, int b){
-//     float avg = (a+b)/2;
-//     return avg;
-// }
-//  float funcAverage2(int a, float b){
-//     float avg = (a+b)/2;
-//     return avg;
-// }
+float funcAverage(int a, int b){
+    float avg = (a+b)/2;
+    return avg;
+}
+ float funcAverage2(int a, float b){
+    float avg = (a+b)/2;
+    return avg;
+}
 
-// template <class t1, class t2>
-// float funcAverage2(t1 a, t2 b){
-//     float avg = (a+b)/2;
-//     return avg;
-// }
+template <class t1, class t2>
+float funcAverage2(t1 a, t2 b){
+    float avg = (a+b)/2;
+    return avg;
+}
 
-// int main(){
-//     float a;
-//     a = funcAverage2(5, 2.4);
-//     cout<<"Average: "<<a<<endl;
-//     return 0;
-// }
+int main(){
+    float a;
+    a = funcAverage2(5, 2.4);
+    cout<<"Average: "<<a<<endl;
+    return 0;
+}
 
-///////////////STL///////////////////////////////
+///////////////INHERITANCE///////////////////////////////
 
- 
+ #include<iostream>
+using namespace std;
+
+//Base Class
+
+class employee{
+    int id;
+    float salary;
+    public:
+    employee(int inpId){
+        id = 1;
+        salary = 34;
+    }
+};
+
+//Derived Class
+
+
+int main(){
+
+    return 0;
+}
